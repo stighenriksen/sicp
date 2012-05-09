@@ -1,0 +1,2 @@
+THe code enters an infinite loop since (sqrt-iter) is called when new-if's arguments are applied, which
+again calls sqrt-iter etc. The good-enough-test never get's invoked.
