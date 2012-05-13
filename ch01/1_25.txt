@@ -1,0 +1,1 @@
+No. Expmod uses the remainders in the successive squarings, so the operands never get bigger than m.
