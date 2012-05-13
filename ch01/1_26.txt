@@ -1,0 +1,1 @@
+The process is exponential. A tree of depth log2(n) is created, with 2^log2n=n nodes.
