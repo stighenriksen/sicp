@@ -9,7 +9,7 @@
 (define (divides? a b)
   (= (remainder b a) 0))
 
-(define (prime? n) (current-milliseconds)
+(define (prime? n)
   (= n (smallest-divisor n)))
 
 (define (timed-prime-test n)

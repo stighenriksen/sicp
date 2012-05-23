@@ -29,10 +29,10 @@
 
 
 ; With large numbers, the problem is that it takes a lot of
-; recursive calls to sqrt-iter before improve-enough returns true;
-; since 0.001 is quite a small error margin when calculating something like:
+; recursive calls to sqrt-iter before improve-enough returns true, and the
+; procedure may never finish since the limited precision may mean that
+; the machine won't be able to represent the error margin correctly.
 (sqrt 999999999999999999)
-
 
 ; New version:
 

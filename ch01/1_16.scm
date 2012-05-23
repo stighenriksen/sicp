@@ -8,5 +8,5 @@
 (define (expt b n)
   (iter-expt b n 1))
 
-(expt 2 16)
+(expt 4 2) 
 

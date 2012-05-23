@@ -2,7 +2,7 @@
   (if (and (not (or (= n 1) (= n (- m 1))))
            (= (remainder (square n) m) 1))
       0
-      (remainder (* n n) m)))
+      (remainder (square n) m)))
       
 (define (expmod base exp m)
   (cond ((= exp 0) 1)
@@ -13,9 +13,9 @@
                     m))))
 
 (define (miller-rabin-test n)
-  (define (try-it a)
+  (define (test a)
     (= (expmod a (- n 1) n) 1))
-  (try-it (+ 1 (random (- n 1)))))
+  (test (+ 1 (random (- n 1)))))
 
 (miller-rabin-test 561) ;f
  (miller-rabin-test 1105) ;f

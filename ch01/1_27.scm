@@ -6,7 +6,10 @@
           (else #f)))
   (fermat-little-iter n (- n 1)))
 
-(fermat-little 2)    ; f
+(fermat-little 2)    ; t
+(fermat-little 3)    ; t
+(fermat-little 5)    ; t
+(fermat-little 6)    ; t
 (fermat-little 100)   ; f
 (fermat-little 139)   ; t
 

@@ -10,7 +10,7 @@
 
 (f 12)
 ; iterative process
-; starting with  a = 2; b = 1; c = 0; d = f(n)
+; starting with  a  2; b = 1; c = 0 counter=n
 (define (f-iter a b c counter)
   (if (< counter 3)
       a
